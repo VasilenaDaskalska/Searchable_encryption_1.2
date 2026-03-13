@@ -35,7 +35,7 @@ The project provides a `tkinter` GUI that lets you:
 
 ## Project Structure
 
-- [main.py](C:\Users\User\PycharmProjects\Searchable_encryption\main.py) - application entry point, UI, indexing, search, and metrics logic
+- [searchable_encryption.py](C:\Users\User\PycharmProjects\Searchable_encryption\main.py) - application entry point, UI, indexing, search, and metrics logic
 - [secure_index.db](C:\Users\User\PycharmProjects\Searchable_encryption\secure_index.db) - local SQLite database for encrypted documents and index entries
 
 ## Running the App
