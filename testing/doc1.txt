@@ -1,0 +1,11 @@
+Searchable encryption allows clients to store encrypted documents in the cloud while still enabling keyword search. 
+The server does not learn the content of the documents but may observe access patterns.
+
+In a typical system, a client generates secure tokens for keywords and sends them to the server.
+The server uses an encrypted index to retrieve matching documents.
+
+Padding and batching techniques are used to reduce leakage from access patterns.
+Epoch rotation periodically refreshes tokens to prevent long-term correlation of queries.
+
+This experiment evaluates performance metrics such as index size, search latency and leakage score.
+The system is implemented in Python using SQLite as a backend database.

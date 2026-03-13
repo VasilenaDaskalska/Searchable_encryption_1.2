@@ -1,0 +1,10 @@
+Cloud storage systems often require secure search functionality. 
+Searchable encryption techniques allow users to search encrypted data without revealing the plaintext.
+
+Index structures map encrypted tokens to document identifiers.
+The system may use hashing and cryptographic functions to protect keywords.
+
+Padding mechanisms ensure that the number of results returned does not directly reveal the real frequency of a keyword.
+Batching groups multiple results together to hide the true result count.
+
+Performance evaluation typically measures indexing time, search latency and storage overhead.

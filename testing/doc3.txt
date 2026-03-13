@@ -1,0 +1,9 @@
+In secure database systems, privacy protection is essential.
+Encrypted indexes allow keyword queries without decrypting the full dataset.
+
+Researchers analyze leakage in searchable encryption schemes.
+Leakage occurs when an attacker can infer information from access patterns or query frequency.
+
+Techniques such as padding, batching and epoch-based key rotation are used to mitigate these risks.
+
+Experimental results often compare multiple configurations to evaluate the trade-off between security and efficiency.

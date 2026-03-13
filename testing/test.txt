@@ -1,0 +1,139 @@
+4. Примерен тест (как да тестваш програмата)
+Стъпка 1 – Импорт
+
+В таб 4.1 Import
+
+Натисни:
+
+Load / Import TXT
+
+Избери:
+
+doc1.txt
+doc2.txt
+doc3.txt
+
+Ще се извлекат keywords като:
+
+search
+encryption
+cloud
+index
+padding
+batching
+epoch
+database
+privacy
+Стъпка 2 – Build index
+
+Отиди в таб 4.2 Build Index
+
+Натисни:
+
+Build protected index
+
+Очакван лог:
+
+Build index ready: 45 index entries
+T_index_ms = ~10-30 ms
+Index_size_MB ≈ 0.01
+Стъпка 3 – Search тест
+
+В таб 4.3 Search
+
+Примерни заявки
+search
+encryption
+padding
+database
+privacy
+
+Примерен резултат:
+
+mode = padding+batching+epoch
+keyword = encryption
+real_count = 2
+padded_count = 2
+returned_count = 8
+T_search_ms = 0.7
+Padding_overhead_% = 0
+5. Benchmark тест
+
+Натисни:
+
+Run test (50 queries)
+
+Програмата ще:
+
+избере random keywords
+
+измери latency
+
+изчисли padding overhead
+
+Примерен резултат:
+
+T_search_ms(avg): 0.85
+Padding_overhead_%(avg): 42.5
+6. Leakage анализ
+
+Отиди в таб 4.4 Leakage
+
+Натисни:
+
+Leakage analysis
+
+Примерен output:
+
+Mode: padding+batching+epoch
+Leakage_score = 0.23
+Samples: 50
+
+Последни наблюдения:
+2 -> 8
+1 -> 8
+3 -> 8
+5 -> 8
+7. Сравнение на режимите
+
+Натисни:
+
+Compare modes
+
+Очаквана таблица:
+
+mode	docs	T_search_ms	overhead	leakage
+no_protection	3	0.20	0%	1.00
+padding	3	0.40	30%	0.55
+padding+batching+epoch	3	0.75	45%	0.22
+8. Графики
+
+Натисни:
+
+Generate plots
+
+Ще се появят 3 графики:
+
+Leakage score
+
+Search latency
+
+Padding overhead
+
+9. По-реалистичен тест (за thesis)
+
+Използвай:
+
+Generate 1000 docs
+
+После:
+
+Compare modes
+
+Това дава реалистични резултати за:
+
+index size
+
+search latency
+
+leakage reduction
