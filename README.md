@@ -50,7 +50,7 @@ pip install matplotlib
 3. Start the application:
 
 ```powershell
-python main.py
+python searchable_encryption.py
 ```
 
 ## Application Workflow
