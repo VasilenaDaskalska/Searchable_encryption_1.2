@@ -1,0 +1,11 @@
+# Python версия
+# Препоръчително: Python >= 3.9
+
+# GUI
+tk  # вграден в повечето Python дистрибуции
+
+# Графики
+matplotlib>=3.5.0
+
+# SQLite, hashlib, base64, re, time, random, string, math, csv, pathlib, dataclasses, typing, collections
+# са стандартни библиотеки, не изискват pip
